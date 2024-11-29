@@ -128,7 +128,7 @@ namespace MintaZH
             }
             if (p != null)
             {
-                e.Kovetkezo = p.Kovetkezo;
+                e = p;
                 p.Kovetkezo = fej;
                 fej = p;
                 return p.Tartalom;

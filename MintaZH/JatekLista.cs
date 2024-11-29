@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace MintaZH
 {
-    internal class JatekLista
+    internal class JatekLista<T> where T : IJáték
     {
+        public int EletkorKorlat { get; set; }
+        public JatekLista(int eletkorKorlat)
+        {
+            EletkorKorlat = eletkorKorlat;
+        }
     }
 }
